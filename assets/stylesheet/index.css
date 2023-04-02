@@ -1,0 +1,1047 @@
+@charset "UTF-8";
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.dif, main > .foot > div:nth-of-type(1) > .acount > a, main > .foot > div:nth-of-type(1) > .acount, main > .foot > div, main > #invitation > .field > form, main > #invitation > .field, main > .whenandwhere > .cake > div,
+main > .whenandwhere > .church > div, main > .whenandwhere > .cake,
+main > .whenandwhere > .church, main > .bridgroom > .bgpic > div, main > .bridgroom > .bgpic, main > .greet > .boxmessage > div > .circle, main > .greet > .boxmessage, main > .greet, main > .ourstory > figure, main > .gb > .pic2 > i, main > .gb > .pic1 > i, main > .gb > .boxdate > div, main > .gb, main .head > .mainmune > ul, main .head > .mainmune, main .head > section:nth-of-type(1) > .boxh > div, main .head > section:nth-of-type(1) > .boxh, main .head > section:nth-of-type(1) > figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .head {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+main .head > section:nth-of-type(1) {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/Backhead.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+main .head > section:nth-of-type(1)::after {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, rgba(238, 156, 167, 0.2078431373), rgba(255, 221, 225, 0.2156862745));
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+main .head > section:nth-of-type(1) > figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(216, 112, 147, 0.484);
+}
+main .head > section:nth-of-type(1) > figure > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80px;
+  height: 80px;
+  border: 1px dotted white;
+  border-radius: 50%;
+}
+main .head > section:nth-of-type(1) > h2 {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 120px;
+  text-shadow: 10px 10px 5px rgba(216, 112, 147, 0.615);
+}
+main .head > section:nth-of-type(1) > .boxh {
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 350%);
+  justify-content: space-around;
+}
+main .head > section:nth-of-type(1) > .boxh > div {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: rgb(216, 112, 147);
+  font-size: 25px;
+}
+main .head > section:nth-of-type(1) > .boxh:hover > div:nth-of-type(odd) {
+  transform: skewY(15deg);
+}
+main .head > section:nth-of-type(1) > .boxh:hover > div:nth-of-type(even) {
+  transform: skewY(-15deg);
+}
+main .head > .mainmune {
+  width: 100%;
+  height: 80px;
+  background-color: #ffb8e5;
+  justify-content: flex-end;
+  z-index: 100;
+  position: fixed;
+}
+main .head > .mainmune > ul {
+  width: 80%;
+  height: 100%;
+}
+main .head > .mainmune > ul > li {
+  padding: 0 15px;
+}
+main .head > .mainmune > ul > li > a {
+  text-transform: uppercase;
+  color: white;
+  font-size: large;
+  transition: 0.4s;
+  border-bottom: 1px solid white;
+}
+main .head > .mainmune > ul > li > a:hover {
+  border-bottom: 1px solid deeppink;
+}
+main .head > .mainmune > a {
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: larger;
+}
+main > .gb {
+  width: 100%;
+  height: 200vh;
+  position: relative;
+}
+main > .gb > .boxdate {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 150px;
+  background-color: #ffb8e5;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  z-index: 2;
+}
+main > .gb > .boxdate > div {
+  outline: 2px dotted white;
+  outline-offset: -8px;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  flex-wrap: wrap;
+}
+main > .gb > .boxdate > div:nth-of-type(1) {
+  background-color: #cc93b7;
+  font-size: 25px;
+}
+main > .gb > .boxdate > div:nth-of-type(2), main > .gb > .boxdate > div:nth-of-type(4), main > .gb > .boxdate > div:nth-of-type(5) {
+  font-size: 30px;
+}
+main > .gb > .boxdate > div:nth-of-type(3) {
+  font-size: 32px;
+}
+main > .gb > h2,
+main > .gb > h1 {
+  width: 12%;
+  height: 20px;
+  color: rgb(216, 112, 147);
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px dotted palevioletred;
+  text-align: center;
+  font-size: small;
+}
+main > .gb > h1 {
+  width: 50%;
+  height: 60px;
+  border: none;
+  top: 10%;
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  text-transform: none;
+}
+main > .gb > .pic1 {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main > .gb > .pic1 > div {
+  width: 20%;
+  height: 80%;
+  position: absolute;
+  right: 45px;
+  top: 35px;
+  border: 15px solid rgba(216, 112, 147, 0.716);
+}
+main > .gb > .pic1 > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+main > .gb > .pic1 > h2 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  width: 40%;
+  height: 15%;
+  position: absolute;
+  right: 0%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: rgb(255, 155, 188);
+  transition: 0.4s;
+}
+main > .gb > .pic1 > h2:hover {
+  text-shadow: 1px 1px 9px rgb(255, 0, 85);
+  color: white;
+  cursor: pointer;
+}
+main > .gb > .pic1 > p {
+  width: 40%;
+  height: 50%;
+  font-size: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: justify;
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  color: rgb(216, 112, 147);
+}
+main > .gb > .pic1 > i {
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  right: 20%;
+  bottom: 10%;
+  font-size: 55px;
+  color: rgb(198, 25, 82);
+}
+main > .gb > .pic2 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 5px rgba(216, 112, 147, 0.716);
+}
+main > .gb > .pic2 > div {
+  width: 20%;
+  height: 52%;
+  position: absolute;
+  left: 45px;
+  top: 200px;
+  border: 15px solid rgba(216, 112, 147, 0.716);
+}
+main > .gb > .pic2 > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+main > .gb > .pic2 > h2 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  width: 40%;
+  height: 15%;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: rgb(255, 155, 188);
+  transition: 0.4s;
+}
+main > .gb > .pic2 > h2:hover {
+  text-shadow: 1px 1px 9px rgb(255, 0, 85);
+  color: white;
+  cursor: pointer;
+}
+main > .gb > .pic2 > p {
+  width: 40%;
+  height: 50%;
+  font-size: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: justify;
+  position: absolute;
+  top: 70%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  color: rgb(216, 112, 147);
+}
+main > .gb > .pic2 > i {
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+  font-size: 55px;
+  color: rgb(198, 25, 82);
+}
+main > .ourstory {
+  width: 100%;
+  height: 200vh;
+  position: relative;
+}
+main > .ourstory > .boxFix {
+  width: 100%;
+  height: 220vh;
+  background-image: url(../img/people-celebrating-wedding-beach.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+}
+main > .ourstory > h2,
+main > .ourstory > h1 {
+  width: 12%;
+  height: 20px;
+  color: rgb(216, 112, 147);
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px dotted palevioletred;
+  text-align: center;
+  font-size: small;
+}
+main > .ourstory > h1 {
+  width: 50%;
+  height: 60px;
+  border: none;
+  top: 10%;
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  text-transform: none;
+  text-shadow: 1px 1px 8px white;
+}
+main > .ourstory > figure {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  outline: 3px dotted white;
+  outline-offset: -10px;
+}
+main > .ourstory > figure:nth-of-type(2) {
+  top: 50%;
+}
+main > .ourstory > figure:nth-of-type(3) {
+  top: 75%;
+}
+main > .ourstory > figure:nth-of-type(4) {
+  top: 95%;
+}
+main > .ourstory > figure:nth-of-type(4) > img {
+  -o-object-position: left;
+     object-position: left;
+}
+main > .ourstory > figure > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+main > .ourstory > figure:hover > img {
+  transform: scale(1.5);
+}
+main > .ourstory .short, main > .ourstory > .shortbox2,
+main > .ourstory > .shortbox4, main > .ourstory > .shortbox1,
+main > .ourstory > .shortbox3 {
+  width: 450px;
+  height: 300px;
+  background-color: rgb(216, 112, 147);
+  position: absolute;
+}
+main > .ourstory .short > div, main > .ourstory > .shortbox2 > div,
+main > .ourstory > .shortbox4 > div, main > .ourstory > .shortbox1 > div,
+main > .ourstory > .shortbox3 > div {
+  outline: 2px dotted white;
+  outline-offset: -15px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+main > .ourstory .short > div:nth-of-type(2), main > .ourstory > .shortbox2 > div:nth-of-type(2),
+main > .ourstory > .shortbox4 > div:nth-of-type(2), main > .ourstory > .shortbox1 > div:nth-of-type(2),
+main > .ourstory > .shortbox3 > div:nth-of-type(2) {
+  outline-offset: -10px;
+}
+main > .ourstory .short > i, main > .ourstory > .shortbox2 > i,
+main > .ourstory > .shortbox4 > i, main > .ourstory > .shortbox1 > i,
+main > .ourstory > .shortbox3 > i {
+  position: absolute;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.474);
+  top: 8%;
+}
+main > .ourstory .short > h4, main > .ourstory > .shortbox2 > h4,
+main > .ourstory > .shortbox4 > h4, main > .ourstory > .shortbox1 > h4,
+main > .ourstory > .shortbox3 > h4,
+main > .ourstory .short > h2,
+main > .ourstory > .shortbox2 > h2,
+main > .ourstory > .shortbox4 > h2,
+main > .ourstory > .shortbox1 > h2,
+main > .ourstory > .shortbox3 > h2,
+main > .ourstory .short > p,
+main > .ourstory > .shortbox2 > p,
+main > .ourstory > .shortbox4 > p,
+main > .ourstory > .shortbox1 > p,
+main > .ourstory > .shortbox3 > p {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 8%;
+}
+main > .ourstory .short > h2, main > .ourstory > .shortbox2 > h2,
+main > .ourstory > .shortbox4 > h2, main > .ourstory > .shortbox1 > h2,
+main > .ourstory > .shortbox3 > h2 {
+  font-family: "Dancing Script", cursive;
+  text-transform: none;
+  top: 15%;
+  font-size: 60px;
+}
+main > .ourstory .short > p, main > .ourstory > .shortbox2 > p,
+main > .ourstory > .shortbox4 > p, main > .ourstory > .shortbox1 > p,
+main > .ourstory > .shortbox3 > p {
+  width: 90%;
+  height: 50%;
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  top: 50%;
+  padding-left: 18px;
+  font-size: 15px;
+  text-transform: none;
+  text-align: justify;
+}
+main > .ourstory > .shortbox1,
+main > .ourstory > .shortbox3 {
+  left: 145px;
+  top: 350px;
+}
+main > .ourstory > .shortbox1 > div,
+main > .ourstory > .shortbox3 > div {
+  transform: skewY(2deg);
+}
+main > .ourstory > .shortbox1 > div:nth-of-type(2),
+main > .ourstory > .shortbox3 > div:nth-of-type(2) {
+  transform: skewY(-2deg);
+}
+main > .ourstory > .shortbox1 > i,
+main > .ourstory > .shortbox3 > i {
+  left: 5%;
+}
+main > .ourstory > .shortbox1 > h4,
+main > .ourstory > .shortbox1 > h2,
+main > .ourstory > .shortbox1 > p,
+main > .ourstory > .shortbox3 > h4,
+main > .ourstory > .shortbox3 > h2,
+main > .ourstory > .shortbox3 > p {
+  right: 8%;
+}
+main > .ourstory > .shortbox2,
+main > .ourstory > .shortbox4 {
+  right: 145px;
+  top: 650px;
+}
+main > .ourstory > .shortbox2 > div,
+main > .ourstory > .shortbox4 > div {
+  transform: skewY(-2deg);
+}
+main > .ourstory > .shortbox2 > div:nth-of-type(2),
+main > .ourstory > .shortbox4 > div:nth-of-type(2) {
+  transform: skewY(2deg);
+}
+main > .ourstory > .shortbox2 > i,
+main > .ourstory > .shortbox4 > i {
+  right: 5%;
+}
+main > .ourstory > .shortbox2 > h4,
+main > .ourstory > .shortbox2 > h2,
+main > .ourstory > .shortbox4 > h4,
+main > .ourstory > .shortbox4 > h2 {
+  left: 8%;
+}
+main > .ourstory > .shortbox2 > p,
+main > .ourstory > .shortbox4 > p {
+  right: 8%;
+}
+main > .ourstory > .shortbox3 {
+  top: 1030px;
+}
+main > .ourstory > .shortbox3 > h2 {
+  font-size: 50px;
+}
+main > .ourstory > .shortbox4 {
+  top: 1320px;
+}
+main > .greet {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(217, 217, 217);
+  position: relative;
+  margin-top: 150px;
+}
+main > .greet > h2 {
+  width: 12%;
+  height: 20px;
+  color: rgb(216, 112, 147);
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px dotted palevioletred;
+  text-align: center;
+  font-size: small;
+}
+main > .greet > h1 {
+  width: 50%;
+  height: 60px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  text-shadow: 1px 1px 8px white;
+  color: rgb(216, 112, 147);
+  text-align: center;
+}
+main > .greet > .boxmessage {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+main > .greet > .boxmessage > div {
+  width: 30%;
+  height: 75%;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 0 10px 5px gray;
+}
+main > .greet > .boxmessage > div > .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(241, 136, 171);
+  position: absolute;
+  top: -8%;
+  left: 8%;
+  font-size: 35px;
+}
+main > .greet > .boxmessage > div > .boxpic {
+  width: 40%;
+  height: 40%;
+  border: 8px solid rgba(216, 112, 147, 0.407);
+  position: absolute;
+  bottom: 8%;
+  left: 6%;
+}
+main > .greet > .boxmessage > div > .boxpic > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+main > .greet > .boxmessage > div > p {
+  width: 90%;
+  height: 40%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 25px;
+  margin: 30px 20px;
+  text-align: justify;
+}
+main > .greet > .boxmessage > div > h2,
+main > .greet > .boxmessage > div > h4 {
+  margin-left: 220px;
+}
+main > .greet > .boxmessage > div > h4 {
+  color: rgb(216, 112, 147);
+  margin-top: 8px;
+  font-size: 18px;
+}
+main > .bridgroom {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+main > .bridgroom > h2 {
+  width: 15%;
+  height: 20px;
+  color: rgb(216, 112, 147);
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px dotted palevioletred;
+  text-align: center;
+  font-size: small;
+}
+main > .bridgroom > h1 {
+  width: 50%;
+  height: 60px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  color: rgb(216, 112, 147);
+  text-align: center;
+}
+main > .bridgroom > .bgpic {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main > .bridgroom > .bgpic > div {
+  width: 20%;
+  height: 75%;
+  background-color: rgb(242, 242, 242);
+  border-radius: 25px;
+  margin: 0 10px;
+  flex-wrap: wrap;
+}
+main > .bridgroom > .bgpic > div > .picbox {
+  width: 50%;
+  height: 50%;
+  border: 8px solid rgba(216, 112, 147, 0.455);
+}
+main > .bridgroom > .bgpic > div > .picbox > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .bridgroom > .bgpic > div > .picbox:nth-of-type(1) > img {
+  -o-object-position: calc(100% + 20px);
+     object-position: calc(100% + 20px);
+}
+main > .bridgroom > .bgpic > div:nth-of-type(2) > .picbox > img {
+  -o-object-position: calc(100% + 80px);
+     object-position: calc(100% + 80px);
+}
+main > .bridgroom > .bgpic > div:nth-of-type(4) > .picbox > img {
+  -o-object-position: calc(100% - 0px);
+     object-position: calc(100% - 0px);
+}
+main > .bridgroom > .bgpic > div:nth-of-type(5) > .picbox > img {
+  -o-object-position: calc(100% - 0px);
+     object-position: calc(100% - 0px);
+}
+main > .bridgroom > .bgpic > div > h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+  text-shadow: 1px 1px 3px rgba(216, 112, 147, 0.892);
+}
+main > .bridgroom > .bgpic > div:nth-of-type(2) > h2, main > .bridgroom > .bgpic > div:nth-of-type(3) > h2 {
+  font-size: 42px;
+}
+main > .bridgroom > .bgpic > div > h3 {
+  font-size: 25px;
+  color: rgba(128, 128, 128, 0.353);
+}
+main > .whenandwhere {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(217, 217, 217);
+}
+main > .whenandwhere > h2 {
+  width: 15%;
+  height: 20px;
+  color: rgb(216, 112, 147);
+  position: absolute;
+  top: 15%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px dotted palevioletred;
+  text-align: center;
+  font-size: small;
+}
+main > .whenandwhere > h1 {
+  width: 50%;
+  height: 60px;
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  color: rgb(216, 111, 146);
+  text-align: center;
+}
+main > .whenandwhere > .cake,
+main > .whenandwhere > .church {
+  width: 25%;
+  height: 70%;
+  position: absolute;
+  top: 65%;
+  right: -10%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+}
+main > .whenandwhere > .cake > div,
+main > .whenandwhere > .church > div {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+}
+main > .whenandwhere > .cake > div > img,
+main > .whenandwhere > .church > div > img {
+  width: 70%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main > .whenandwhere > .cake > h2,
+main > .whenandwhere > .church > h2 {
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-size: 35px;
+}
+main > .whenandwhere > .cake > p,
+main > .whenandwhere > .church > p {
+  width: 100%;
+  color: rgb(122, 122, 122);
+  text-align: center;
+  font-size: 20px;
+}
+main > .whenandwhere > .cake > h4,
+main > .whenandwhere > .church > h4 {
+  width: 100%;
+  color: rgb(248, 94, 145);
+  text-align: center;
+  font-size: 20px;
+}
+main > .whenandwhere > .cake > div:nth-of-type(2),
+main > .whenandwhere > .church > div:nth-of-type(2) {
+  width: 25%;
+  height: 5%;
+  border: 1px dotted rgb(248, 94, 145);
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0%;
+  background-color: rgb(217, 217, 217);
+}
+main > .whenandwhere > .cake > div:nth-of-type(2) > a,
+main > .whenandwhere > .church > div:nth-of-type(2) > a {
+  color: rgb(248, 94, 145);
+}
+main > .whenandwhere > .cake > div:nth-of-type(2):hover,
+main > .whenandwhere > .church > div:nth-of-type(2):hover {
+  transform: scale(1.2);
+}
+main > .whenandwhere > .church {
+  right: 15%;
+}
+main > .whenandwhere > iframe {
+  width: 25%;
+  height: 80%;
+  position: absolute;
+  top: 55%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+main > #invitation {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+main > #invitation > .back {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/backrsv.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+main > #invitation > .back::after {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, rgba(173, 169, 150, 0.6431372549), rgba(242, 242, 242, 0.5490196078), rgba(219, 219, 219, 0.2901960784), rgba(234, 234, 234, 0.2274509804));
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+}
+main > #invitation > .back ~ * {
+  z-index: 80;
+}
+main > #invitation > h2 {
+  width: 15%;
+  height: 20px;
+  color: rgb(216, 112, 147);
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px dotted palevioletred;
+  text-align: center;
+  font-size: small;
+}
+main > #invitation > h1 {
+  width: 50%;
+  height: 60px;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  color: rgb(216, 111, 146);
+  text-align: center;
+}
+main > #invitation > .field {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  top: 65%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+  border: none;
+}
+main > #invitation > .field > form {
+  width: 100%;
+  height: 100%;
+  justify-content: start;
+  align-items: start;
+  padding: 15px 15px;
+  flex-wrap: wrap;
+}
+main > #invitation > .field > form > input,
+main > #invitation > .field > form > select {
+  width: 90%;
+  height: 10%;
+  border: 1px solid rgb(216, 111, 146);
+  background-color: transparent;
+}
+main > #invitation > .field > form > input:nth-of-type(4) {
+  width: 20%;
+  height: 10%;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(216, 111, 146);
+  cursor: pointer;
+}
+main > .gallery {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+main > .gallery > h2 {
+  width: 15%;
+  height: 20px;
+  color: rgb(216, 112, 147);
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px dotted palevioletred;
+  text-align: center;
+  font-size: small;
+}
+main > .gallery > h1 {
+  width: 50%;
+  height: 60px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  color: rgb(216, 112, 147);
+  text-align: center;
+}
+main > .gallery > .pic {
+  width: 100%;
+  height: 62%;
+  position: absolute;
+  margin-top: 20%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  display: grid;
+  z-index: 40;
+}
+main > .gallery > .pic > div {
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+  transition: 0.4s;
+}
+main > .gallery > .pic > div:hover {
+  transform: scale(2);
+}
+main > .gallery > .pic > div:hover > img {
+  border-radius: 5%;
+}
+main > .gallery > .pic > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .foot {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(216, 112, 147);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+main > .foot > div {
+  width: 100%;
+  height: 90%;
+  position: relative;
+  text-align: center;
+  color: white;
+  flex-wrap: wrap;
+}
+main > .foot > div:nth-of-type(1) > h2 {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+main > .foot > div:nth-of-type(1) > p {
+  width: 50%;
+}
+main > .foot > div:nth-of-type(1) > .acount {
+  width: 100%;
+  justify-content: space-evenly;
+}
+main > .foot > div:nth-of-type(1) > .acount > a {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(159, 70, 100);
+  border-radius: 50%;
+}
+main > .foot > div:nth-of-type(1) > .acount > a > i {
+  font-size: 25px;
+  color: white;
+}
+main > .foot > div:nth-of-type(2) > h3, main > .foot > div:nth-of-type(3) > h3 {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+main > .foot > div:nth-of-type(2) > ul, main > .foot > div:nth-of-type(3) > ul {
+  margin-top: -250px;
+}
+main > .foot > div:nth-of-type(2) > ul > li, main > .foot > div:nth-of-type(3) > ul > li {
+  list-style-type: none;
+  color: white;
+  margin: 25px 0;
+}
+main > .foot > div:nth-of-type(2) > ul > li::before, main > .foot > div:nth-of-type(3) > ul > li::before {
+  content: "✓";
+  padding: 0 10px;
+}
+main > .foot > div:nth-of-type(2) > ul > li > a, main > .foot > div:nth-of-type(3) > ul > li > a {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+}
+main > .foot > div:nth-of-type(4) > h3 {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+main > .foot > div:nth-of-type(4) > ul {
+  margin-top: -250px;
+}
+main > .foot > div:nth-of-type(4) > ul > li {
+  list-style-type: none;
+  color: white;
+  margin: 25px 0;
+}
+main > .foot > div:nth-of-type(4) > ul > li > a {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+}
+main > .foot > div:nth-of-type(4) > ul > li > a > i {
+  padding: 0 15px;
+  font-size: 15px;
+}/*# sourceMappingURL=index.css.map */
