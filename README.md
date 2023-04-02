@@ -1,6 +1,6 @@
 # Wedding-Site
 
-😉**This site is make in Iranian Noroz and it is about Tochal entertainment and sports complex inside Iran**
+ 👰 🤵**A cool site to invite to your wedding**
 
 ![1](https://user-images.githubusercontent.com/126666369/224512038-8cbfc5d4-b3db-49de-bdc9-27504bbae833.jpg)
 
